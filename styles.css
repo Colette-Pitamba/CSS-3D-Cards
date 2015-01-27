@@ -1,0 +1,209 @@
+/*--------------------------Resets----------------------------------------*/
+ 
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+       -o-box-sizing: border-box;
+          box-sizing: border-box;
+}
+ 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 0;
+}
+ 
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ 
+p {
+  margin: 0;
+}
+
+/*--------------------------General----------------------------------------*/
+
+body {
+	font-family:"Apercu Regular", Calibri, sans-serif; 
+	font-weight:normal; 
+	font-style:normal;
+	font-size: 100%;
+	color: #fff;
+}
+
+.row {
+	position: relative;
+	overflow: auto;
+	padding-bottom: 11px;
+	padding-top: 11px;
+	width: 90%; /* 1284px */
+	margin: 24px auto 0 auto;
+	z-index: 10;
+
+}
+
+.container {
+	position: relative;
+	z-index: 10;
+}
+
+.background_image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url("images/background.jpg");
+}
+
+p {
+	margin-top: 50px;
+	font-size: 80px;
+	color: #fff;
+}
+
+/*--------------------------Space----------------------------------------*/
+
+.circleLeft {
+	margin-left: 24px;
+}
+
+.lastrow {
+	padding-bottom: 100px;
+}
+
+/*--------------------------Header----------------------------------------*/
+
+header {
+	position: relative;
+	width: 561px;
+	margin-top: 51px;
+	margin-bottom: 94px;
+	overflow: auto;
+	margin-left: 71px;
+}
+
+.title{ 
+	font-size: 3em;
+	letter-spacing: 4px;
+	width: 240px;
+	margin-bottom: 18px;
+}
+
+.title_space {
+	margin-left: 30px;
+}
+
+.sub_title {
+	font-size: 1.125em;
+}
+
+.project {
+	position: absolute;
+	width: 97px;
+	bottom: 0;
+	right: 0;
+}
+
+/*--------------------------Card Font (front)----------------------------------------*/
+
+.icon {
+	font-size: 180px;
+}
+
+p {
+	text-align: center;
+}
+
+/*--------------------------Card Font (back)----------------------------------------*/
+
+.letter {
+	font-size: 120px;
+}
+
+.dash {
+	margin-top: -18px;
+	font-size: 48px;
+}
+
+.abbr {
+	font-size: 36px;
+	margin-top: 5px;
+}
+
+/*--------------------------Cards----------------------------------------*/
+
+.flip3D {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	float: left;
+	text-align: center;
+	z-index: 10;
+}
+
+.flip3D > .front {
+	position: absolute;
+	-webkit-transform: perspective(600px) rotateY(0deg);
+	-moz-transform: perspective(600px) rotateY(0deg);
+	-o-transform: perspective(600px) rotateY(0deg);
+	transform: perspective(600px) rotateY(0deg);
+	width: 300px;
+	height: 300px;
+	border: 4px solid white;
+	border-radius: 100%;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
+	transition: transform .5s linear 0s;
+}
+
+.flip3D > .back {
+	position: absolute;
+	-webkit-transform: perspective(600px) rotateY(180deg);
+	-moz-transform: perspective(600px) rotateY(180deg);
+	-o-transform: perspective(600px) rotateY(180deg);
+	transform: perspective(600px) rotateY(180deg);
+	background-color: #3300ff;
+	width: 300px;
+	height: 300px;
+	border-radius: 100%;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
+	transition: -moz-transform .5s linear 0s;
+	transition: -o-transform .5s linear 0s;
+	transition: transform .5s linear 0s;
+}
+
+.flip3D:hover > .front {
+	-webkit-transform: perspective(600px) rotateY(-180deg);
+	-moz-transform: perspective(600px) rotateY(-180deg);
+	-o-transform: perspective(600px) rotateY(-180deg);
+	transform: perspective(600px) rotateY(-180deg);
+}
+
+.flip3D:hover > .back {
+	-webkit-transform: perspective(600px) rotateY(0deg);
+	-moz-transform: perspective(600px) rotateY(0deg);
+	-o-transform: perspective(600px) rotateY(0deg);
+	transform: perspective(600px) rotateY(0deg);
+}
+
+
+
+
+
+
